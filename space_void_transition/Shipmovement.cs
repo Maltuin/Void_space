@@ -32,7 +32,7 @@ public class Shipmovement : MonoBehaviour
 		{
 				if (i < stop) {
 						controler.transform.position += controler.transform.forward * speed * Time.deltaTime;
-						i += 1;
+						i++;
 				}
 		}
 }
