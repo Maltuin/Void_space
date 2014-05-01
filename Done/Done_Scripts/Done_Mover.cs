@@ -7,6 +7,6 @@ public class Done_Mover : MonoBehaviour
 
 	void Start ()
 	{
-		rigidbody.velocity = transform.forward * speed;
+		rigidbody.velocity = new Vector3(speed, 0, 0);
 	}
 }
