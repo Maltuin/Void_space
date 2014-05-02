@@ -4,7 +4,7 @@ using System.Collections;
 public class ontouch : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		Destroy (other.gameObject);
-		enlife -= 1;
+		enlife -= SpaceShip.degat;
 	}
 	public int enlife;
 	// Use this for initialization
@@ -16,7 +16,9 @@ public class ontouch : MonoBehaviour {
 	void Update () {
 	if(enlife < 1)
 		{
-		 Destroy (touchenemy.enemy2);
+		Destroy (touchenemy.enemy2);
+		planet.fire = true;
+		Application.LoadLevel("space_void_end");
 	}
 }
 }
